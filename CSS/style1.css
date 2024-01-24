@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Nunito:400,600,700');
+
+/*======================
+        CORPO 
+========================*/
+
+body {
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #cb1c2b;
+}
+
+
+.collapse-menu {
+    padding-left: 10px;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.navbar-toggler {
+    height: 45px;
+    display: flex
+}
+
+#navbarNav {
+    display: none !important;
+    width: 100%;
+}
+
+#navbarNav.show {
+    display: flex !important;
+}
+
+.navbar-expand-lg .navbar-toggler {
+    display: inherit !important;
+}
+
+.navbar-expand-lg .navbar-nav {
+    flex-direction: column !important;
+}
+
+.navbar-expand-lg .navbar-collapse,
+.collapse:not(.show) {
+    display: none !important;
+}
+
+
+.container-fluid .navbar.bg-gray {
+    background-color: #efeff0 !important;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 2px 2px 2px black;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+.nav {
+    color: black;
+}
+
+.container-fluid {
+    max-height: 100vh;
+    height: 100%;
+    z-index: 1;
+}
+
+.fab:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+.icon-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+body.dark {
+    background: #232c3577;
+}
+
+body.dark .navbar.bg-gray {
+    background-color: #3c4249 !important;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translate(24px)
+}
+
+.label {
+    background-color: #5f5f5f;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+
+    transform: scale(1.5)
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+    transform: translate(0px);
+    transition: transform 0.2s linear;
+}
+
+.fa-moon {
+    color: darkblue;
+}
+
+.fa-sun {
+    color: rgb(255, 137, 2);
+}
+
+
+/*==========================
+      BACK TOP ---  VOLTA AO TOPO
+============================*/
+.back_top {
+    text-align: center;
+    position: fixed;
+    bottom: 15px;
+    height: 35px;
+    width: 35px;
+    display: none;
+    z-index: 10000;
+    border-radius: 3px;
+    right: 20px;
+    transition: all 0.5s;
+}
+
+.back_top i {
+    color: #f80e0e;
+    line-height: 35px;
+    font-size: 32px;
+    display: block;
+}
+
+
+a:hover {
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+/*===========================
+    FUNCIONAMENTO 2FA E N.MÁSCARA
+=============================*/
+
+.fun2fa-boxes {
+    border: 1px solid #f00b0b;
+}
+
+.fun2fa-boxes .fun2fa-boxes-img i {
+    font-size: 44px;
+}
+
+.fun2fa-boxes .fun2fa-title-border {
+    height: 2px;
+    width: 40px;
+    margin: 15px auto;
+    transition: all 0.5s;
+}
+
+.fun2fa-boxes:hover .fun2fa-title-border {
+    width: 60px;
+}
+
+.fun2fa-boxes h5 {
+    font: weight 6px;
+}
+
+
+/*===========================
+         USO 2FA E RECURSOS N.MÁSCARA
+=============================*/
+
+.owl-theme .owl-controls .owl-page {
+    margin: 20px 0px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 12px;
+    height: 6px;
+    margin: 5px 4px;
+    filter: Alpha(Opacity=50);
+    opacity: 0.5;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    transition: all 0.4s;
+}
+
+.owl-theme .owl-controls .owl-page.active span {
+    width: 20px;
+}
+
+
+
+/*======================
+        RODAPÉ
+========================*/
+
+.footer {
+    padding: 70px 0px;
+    background-color: #242424 !important;
+}
+
+.footer .footer-alt p {
+    font-size: 16px;
+}
+
+.footer .footer-alt ul li a {
+    border-radius: 50%;
+    transition: all 0.5s;
+    background-color: #f1f1f121;
+    width: 42px;
+    height: 42px;
+    display: block;
+    font-size: 18px;
+    line-height: 42px;
+    text-align: center;
+}
