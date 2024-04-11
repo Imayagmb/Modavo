@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sms Programável</title>
+
+    <!-- Boxicons CDN -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--LOGO NA ABA-->
     <link rel="shortcut icon" href="img/mini-logo-net.png" type="image/x-icon">
 
@@ -15,11 +20,13 @@
     <!-- DESIGN ICONS CSS -->
     <link href="css/materialdesignicons.min.css" rel="stylesheet">
 
+    <!--ICON-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- MOBRISE ICONS CSS-->
     <link href="css/mobiriseicons.css" rel="stylesheet">
-
-    <!-- MAGNIFIC-POPUP CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
 
     <!-- OWL SLIDER CSS -->
     <link rel="stylesheet" href="css/owl.carousel.css" />
@@ -27,113 +34,48 @@
     <link rel="stylesheet" href="css/owl.transitions.css" />
 
     <!--STYLE CSS -->
-    <link href="css/style2.css" rel="stylesheet">
     <link href="css/Responsivo.css" rel="stylesheet">
-    <link href="css/menu.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 
 <body>
-    <!--LOGO-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-gray">
+    <header>
+        <nav>
+            <div class="navbar">
+                <i class="bx bx-menu"></i>
+                <div class="logo"><a href="index.html"><img src="img/logo-netfon.png"></a></div>
+                <div class="nav-links">
+                    <div class="sidebar-logo">
+                        <a href="#"><img src="img/logo-netfon.png"></a>
+                        <i class="bx bx-x"></i>
+                    </div>
+                    <ul class="links">
+                        <li><a href="index.html">HOME</a></li>
+                        <li>
+                            <a href="#">SERVIÇOS</a>
+                            <i class="bx bxs-chevron-down modavo-arrow arrow"></i>
+                            <ul class="modavo-sub-menu sub-menu">
+                                <li><a href="Two-Factor.html">2FA</a></li>
+                                <li><a href="numeromascara.html">Número mascara</a></li>
+                                <li><a href="googleVerified.html">Google Chamada Verificada</a></li>
+                                <li><a href="smsprogramavel.html">Sms programável</a></li>
+                            </ul>
+                        </li>
 
-        <!-- LOGO -->
-        <div class="header-wrapper">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo-telelecall.png" width="100" height="40" alt="">
-            </a>
-
-            <div class="button-wrapper">
-                <button onclick="decreaseFontSize()">A -</button>
-                <button onclick="increaseFontSize()">A +</button>
-                <!-- BOTÃO MENU -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span id="toogle" class="navbar-toggler-icon"></span>
-                </button>
-
-
-                <!-- DARK MODE -->
-                <div>
-                    <input type="checkbox" class="checkbox" id="chk" />
-
-                    <label class="label" for="chk">
-                        <i id="moon" class="fas fa-moon"></i>
-                        <i id="font" class="fas fa-sun"></i>
-                        <div class="ball"></div>
-                    </label>
-
+                        <li><a href="cadastro.html">CADASTRO</a></li>
+                        <li><a href="login.html">LOGIN</a></li>
+                    </ul>
                 </div>
-                <!-- fim do dark mode-->
+
             </div>
 
-        </div>
+        </nav>
+    </header>
+    <br><br><br>
 
-
-        <!-- parte colapsável -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-
-                <!-- primeiro item -->
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" data-target="#inicio" aria-expanded="true"
-                        aria-controls="collapseOne" href="index.html">
-                        Página Inicial
-                    </a>
-                </li>
-
-                <!-- CPaaS -->
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" data-target="#home" aria-expanded="true"
-                        aria-controls="collapseOne">
-                        Serviços Cpaas
-                    </a>
-                </li>
-
-                <div class="collapse collapse-menu" id="home">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="2fa.html">2FA</a>
-                    </li>
-
-
-
-                    <!-- segundo -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="numeromascara.html">Número mascara</a>
-                    </li>
-
-
-
-                    <!-- terceiro -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="googleVerified.html">Google Verified</a>
-                    </li>
-
-
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="smsprogramavel.html">Sms programavel</a>
-                    </li>
-
-
-
-
-                </div>
-                <li class="nav-item">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">Aréa do Cliente</a>
-                </li>
-                </li>
-
-
-
-            </ul>
-        </div>
-    </nav>
-
-    <hr class="hr-custom">
 
     <!-- INÍCIO INTRODUÇÃO -->
     <br>
@@ -146,7 +88,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="mt-3">
+                    <div class="sms mt-3">
                         <h1><span class="font-weight-bold">SMS Programável</span></h1>
 
                         <h4 class="mt-4">Conecte-se com seus<span class="text-custom font-weight-bold">
@@ -169,8 +111,9 @@
 
 
         <!-- FIM INTRODUÇÃO -->
-        <br>
-        <hr>
+
+        <br> <br> <hr noshade= ”noshade” width="60%" size="20px" /> <br>
+
         <!-- INÍCIO FUNCIONAMENTO -->
 
 
@@ -178,7 +121,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="text-center">
-                        <h3>Funcionamento <span class="font-weight-bold"> SMS Programável</span></h3>
+                        <h3><span class="font-weight-bold">Funcionamento </span></h3>
                         <p><strong>SMS</strong> é a forma mais rápida, eficiente e de baixo custo<br> para se
                             comunicar
                             com seus cliente.</p>
@@ -225,7 +168,7 @@
                             <img src="img/fun4-sms.png" alt="">
                         </div>
                         <div class="mt-4">
-                            <h5 class="mb-0">Maior a probabilidade de um
+                            <h5 class="mb-0">Maior a probabilidade de um<br>
                                 cliente abrir um SMS do que
                                 um e-mail</h5>
                         </div>
@@ -237,18 +180,17 @@
 
 
         <!-- FIM FUNCIONAMENTO -->
-        <br>
-        <hr>
-        <!-- INÍCIO JORNADA DO CLIENTE-->
 
+        <br> <br> <hr noshade= ”noshade” width="60%" size="20px" /> <br>
+
+        <!-- INÍCIO JORNADA DO CLIENTE-->
 
         <div class="container">
             <div class="row align-items-center">
 
                 <div class="col-lg-6">
-                    <div class="mt-3">
-                        <h3><span class="font-weight-bold">Jornada do cliente</span>
-                            - SMS Programável</h3>
+                    <div class="jornada-sms mt-3">
+                        <h3><span class="font-weight-bold">Jornada do cliente</span></h3>
 
 
                         <p class="text-muted mt-4"> Ofereça uma melhor experiência ao cliente <br> acompanhando
@@ -259,20 +201,20 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="mt-3">
-                        <img src="img/jornada-cliente-sms.jpeg" alt="" class="img-fluid mx-auto d-block img-thumbnail">
+                        <img src="img/jornada-cliente-sms.jpg" alt="" class="img-fluid mx-auto d-block img-thumbnail">
                     </div>
                 </div>
             </div>
         </div>
 
         <!--FIM JORNADA DO CLIENTE-->
-        <HR>
+      <br><br>
         <!-- INÍCIO BENEFÍCIOS -->
 
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
-                    <div class="text-center">
+                    <div class="bene-sms text-center">
                         <h3> <span class="font-weight-bold"> Benefícios - </span> SMS Programável</h3>
                     </div>
                 </div>
@@ -325,13 +267,13 @@
         </div>
 
         <!-- FIM BENEFÍCIOS -->
-        <hr>
+        <br> <br> <hr noshade= ”noshade” width="60%" size="20px" /> <br>
         <!-- INÍCIO USOS SMS -->
 
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
-                    <div class="text-center">
+                    <div class="usos-sms text-center">
                         <h3> <span class="font-weight-bold"> USOS</span> - SMS Programável</h3>
                     </div>
                 </div>
@@ -397,7 +339,7 @@
     </div>
     <!-- FIM USOS SMS -->
 
-
+<hr>
     <!--INICIO RODAPÉ-->
     <footer class="footer bg-light">
         <div class="container">
@@ -414,7 +356,7 @@
                             <li class="list-inline-item"><a href="#"><i class="mdi mdi-whatsapp text-muted"></i></a>
                             </li>
                         </ul>
-                        <p class="text-muted mb-0"> Copyright 2018 &copy; Tellecal. </p>
+                        <p class="text-muted mb-0"> Copyright 2023 &copy; Maya Monteiro. </p>
                     </div>
                 </div>
             </div>
@@ -432,7 +374,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <!--EASING JS-->
     <script src="js/jquery.easing.min.js"></script>
-
+    <script src="js/scrollspy.min.js"></script>
     <!-- Magnific Popup Js -->
     <script src="js/jquery.magnific-popup.min.js"></script>
     <!-- OWL CAROUSEL -->
@@ -443,8 +385,7 @@
     <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-    <script async type="text/javascript" src="submenu.js"></script>
-    <script async type="text/javascript" src="menu.js"></script>
+
 
 </body>
 

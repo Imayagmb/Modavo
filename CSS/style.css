@@ -1,6 +1,26 @@
 /* Googlefont Poppins*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+
+
+/* VARIÁVEIS - COLORS */
+:root {
+  /* LIGHT */
+  ---branco: #F6F9FF;
+
+  /* DARK */
+  ---preto-1: #797984;
+  ---preto-2: #312d37;
+  ---preto-3: #000;
+
+  /* BLUE */
+  ---azul-1: #89d6e9;
+  ---azul-2: #2aade5;
+  ---azul-3: #2679a8;
+  ---azul-4: #2c43aa;
+
+}
+
 /*======================
         GERAL
 ========================*/
@@ -13,91 +33,56 @@
 
 body {
   min-height: 100vh;
-}
-
-
-/*======================
-       DARK-MODE
-========================*/
-
-body.dark {
-  background: #232c3577;
-}
-
-body.dark .navbar.bg-gray {
-  background-color: #3c4249 !important;
-}
-
-.checkbox {
-  display: none;
-}
-
-.label {
-  background-color: #5f5f5f;
-  border-radius: 50px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px;
-  position: relative;
-  height: 30px;
-  width: 60px;
-  transform: scale(1.1);
-}
-
-.label .ball {
-  background-color: #d1d1d1;
-  border-radius: 50%;
-  position: absolute;
-  top: 5px;
-  left: 3px;
-  height: 22px;
-  width: 22px;
-  transform: translate(1px);
-  transition: transform 0.2s linear;
-}
-
-.checkbox:checked+.label .ball {
-  transform: translate(30px)
-}
-
-.fa-moon {
-  color: #4a4af7;
-}
-
-.fa-sun {
-  color: #ffee02;
+  background-color: var(---branco);
 }
 
 /*======================
-       H2 COLOR INTRODUÇÃO 
+       H2 COLOR INTRODUÇÃO DAS PÁGINAS
 ========================*/
 
-.introducao-cpaas>h2 {
-  color: #2aade5;
+.introducao-cpaas>h2,
+.two-fa>h2,
+.numero-mascara>h1,
+.google>h1,
+.sms>h1 {
+  color:var(---azul-2);
+}
+
+.fortalecimento>h2,
+.transforma>h2,
+.pode-usar>h2,
+.uso-google>h3,
+.desvantagem-google>h2,
+.jornada-sms>h3{
+  color: var(---azul-2);
 }
 
 /*H2 BEFORE*/
 .servicos-cpaas>h2::before,
 .usos-cpaas>h2::before,
-.vantagens-cpaas>h2::before {
+.vantagens-cpaas>h2::before,
+.funcio-cpaas>h2::before,
+.uso-cpaas>h2::before,
+.bene-cpaas>h2::before,
+.funciona-mascara>h3::before,
+.recursos-mascara>h3::before,
+.Func-google>h3::before,
+.vantagem-google>h3::before,
+.compativel-google>h3::before,
+.bene-sms>h3::before,
+.usos-sms>h3::before
+{
   position: absolute;
   content: '';
   width: 10%;
   height: 2px;
-  background-color: #2aade5;
+  background-color: var(---azul-2);
   bottom: 0px;
   border-radius: 5px;
 
 }
 
-/*======================
-BUTTON SERVIÇOS
-========================*/
-.btn {
-  color: #0e8ff8;
-}
+
 
 /*======================
         NAV
@@ -109,8 +94,8 @@ nav {
   width: 100%;
   height: 100%;
   height: 60px;
-  background: #fff;
-  box-shadow: 0 1px 2px #00000033;
+  background: var(---branco);
+  box-shadow: 0 1px 2px var(---preto-1);
   z-index: 99;
 }
 
@@ -153,7 +138,7 @@ nav .navbar .links li a {
   height: 100%;
   text-decoration: none;
   white-space: nowrap;
-  color: #6d6d6d;
+  color: var(---preto-1);
   font-size: 15px;
   font-weight: 500;
 }
@@ -173,7 +158,7 @@ nav .navbar .links li .arrow {
   line-height: 70px;
   text-align: center;
   display: inline-block;
-  color: #6d6d6d;
+  color: var(---preto-1);
   transition: all 0.3s ease;
 }
 
@@ -182,8 +167,8 @@ nav .navbar .links li .sub-menu {
   top: 70px;
   left: 0;
   line-height: 40px;
-  background: #ffffff;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: var(---branco);
+  box-shadow: 0 1px 2px #00000033;
   border-radius: 0 0 4px 4px;
   display: none;
   z-index: 2;
@@ -198,7 +183,7 @@ nav .navbar .links li:hover {
 
 .navbar .links li .sub-menu li {
   padding: 0 22px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #ffffff1a;
 }
 
 .navbar .links li .sub-menu a {
@@ -263,8 +248,8 @@ CARD- COMUNICAÇÃO
 ============================*/
 .card {
   display: flex;
-  background-color: #2aade5;
-  color: #fff;
+  background-color: var(---azul-1);
+  color: var(---branco);
   padding: 25px;
   flex-direction: column-reverse;
 }
@@ -286,7 +271,7 @@ CARD- COMUNICAÇÃO
 }
 
 .back_top i {
-  color: #0e8ff8;
+  color: var(---azul-3);
   line-height: 35px;
   font-size: 32px;
   display: block;
@@ -299,7 +284,7 @@ CARD- COMUNICAÇÃO
 
 .footer {
   padding: 50px 0px;
-  background-color: #ffffff !important;
+  background-color: var(---branco) !important;
 }
 
 .footer .footer-alt p {
@@ -318,6 +303,11 @@ CARD- COMUNICAÇÃO
   text-align: center;
 }
 
+.footer .footer-alt a:hover {
+  background-color: var(---azul-1);
+  transform: translateY(10px);
+
+}
 /*======================
         RESPONSIVO
 ========================*/
@@ -354,10 +344,10 @@ CARD- COMUNICAÇÃO
     display: block;
     max-width: 270px;
     width: 100%;
-    background: #fff;
+    background: var(---branco);
     line-height: 40px;
     padding: 20px;
-    box-shadow: 0 5px 10px #00000033;
+    box-shadow: 0 5px 10px var(---preto-1);
     transition: all 0.5s ease;
     z-index: 1000;
   }
@@ -377,7 +367,7 @@ CARD- COMUNICAÇÃO
   .sidebar-logo i,
   .navbar .bx-menu {
     font-size: 25px;
-    color: #6d6d6d;
+    color: var(---azul-3);
   }
 
   nav .navbar .links {
@@ -417,6 +407,8 @@ CARD- COMUNICAÇÃO
     justify-content: space-between;
   }
 
+
+ /* Seta para abrir o sub-menu */
   .links li:hover .modavo-arrow,
   .links li:hover {
     transform: rotate(0deg);
@@ -427,16 +419,16 @@ CARD- COMUNICAÇÃO
   }
 
   .navbar .links li .sub-menu {
-    /* background: red; */
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+   
   }
 
   .links li .sub-menu .more:hover {
     display: none;
   }
 
+  /* Sub-menu hambuguer */
   nav .navbar .links li:hover .modavo-sub-menu,
   nav .navbar .links li:hover .js-sub-menu {
     display: none;

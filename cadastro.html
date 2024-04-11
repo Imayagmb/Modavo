@@ -5,148 +5,162 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seja Cliente | Cadastra-se</title>
+    <title>Cadastre-se</title>
 
-    <!--LOGO NA  ABA-->
+    <!--LOGO NA ABA-->
     <link rel="shortcut icon" href="img/mini-logo-net.png" type="image/x-icon">
 
+
     <!--CSS-->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cadastro.css">
 
-    <link rel="stylesheet" href="css/Stylecadastro.css">
-
-    <link rel="stylesheet" href="CSS/Responsivo.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet" />
 </head>
 
-<!--CORPO-->
+<!--corpo-->
 
 <body>
-    <!--LOGO-->
-    <a class="navbar-brand" href="index.html">
-        <img src="img/logo-telelecall.png" alt="">
-    </a>
-
-
-    <!--MAIN CONTAINER-->
-    <div class="main-container">
-        <div class="col-md-6">
-
-            <!--INÍCIO PANEL-->
-            <div class="auth-panel">
-                <h3>
-                    <strong>SEJA NOSSO CLIENTE</strong>
-                </h3>
-                <p><strong>CADASTRA-SE</strong>
-                </p>
-            </div>
-            <!--FIM PANEL-->
-
-            <!--FORMULÁRIO-->
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="nome"><strong>NOME COMPLETO</strong></label>
-                    <input name="text" type="text" name="nome" id="nome" placeholder="Digite seu nome" class="input"
-                        required>
-                    <span class="span-required"></span>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="nome"><strong>NOME MATERNO</strong></label>
-                    <input name="text" type="text" name="nome" id="nome" placeholder="Digite o nome de sua mãe"
-                        class="input" required>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="email"><strong>EMAIL</strong></label>
-                    <input type="email" name="email" id="email" placeholder="Digite aqui seu email" class="input"
-                        required>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="cpf"><strong>CPF</strong></label>
-                    <input type="text" name="cpf" id="cpf" placeholder="Digite aqui seu Cpf" class="input" required>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="adress"><strong>ENDEREÇO COMPLETO</strong></label>
-                    <input type="text" name="adress" id="adress" placeholder="Digite aqui seu endereço" class="input"
-                        required>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="sex"><strong>SEXO</strong></label>
-                    <select id="sex" required>
-                        <option selected disabled value="">Selecione</option>
-                        <option>Feminino</option>
-                        <option>Masculino</option>
-                        <option>Outro</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="date"><strong>DATA DE NASCIMENTO</strong></label>
-                    <input type="date" name="date" id="date" placeholder="Data de Nascimento" class="input required"
-                        required>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="tel"><strong>TEL FIXO</strong></label>
-                    <input type="text" name="tel" id="tel" placeholder="(+55)XX-XXXXXXXX" class="input" required>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="tel"><strong>CELULAR</strong></label>
-                    <input type="text" name="tel" id="tel" placeholder="(+55)XX-XXXXXXXX" class="input" required>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="password"><strong>SENHA</strong></label>
-                    <input name="password" type="password" id="password" placeholder="Digite sua senha" class="input"
-                        required />
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="password"><strong>CONFIRMAR SENHA</strong></label>
-                    <input name="password" type="password" id="password" placeholder="Confirme a sua senha"
-                        class="input" required />
-                </div>
-                <p>Já é nosso Cliente?<a
-                        href="file:///C:/Users/mayam/OneDrive/%C3%81rea%20de%20Trabalho/Trabalho%20Faculdade/login.html#"><strong>
-                            Acesse sua conta</strong></a></p>
-
-
-            </div>
-
-            <div class="col-md-4">
-                <button class="btn btn primary" type="submit">Entrar</button>
-            </div>
-
+    <div class="container">
+        <div class="header">
+            <a href="index.html"> <img src="img/casa.png" alt="casa">
+            </a>
+            <h2><span class="font-awesome">Criar Uma Conta</h2></span>
         </div>
 
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Nome de usuário</label>
+                <input type="text" id="username" placeholder="Digite seu nome de usuário..." />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Digite seu email.." />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha..." />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password-confirmation">Confirmação de senha</label>
+                <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente..." />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <button type="submit">Enviar</button>
+
+            <div id="link">
+                <a href="login.html">
+                  <p> Já possui conta? Acesse aqui</p>
+                </a>
+              </div>
+            </div>
+        </form>
     </div>
-    <!--JS-->
-    <script src="JS/validacao.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+
+    <!--SCRIPT VALIDAÇÃO-->
+    <script>
+        const form = document.getElementById("form");
+        const username = document.getElementById("username");
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+        const passwordConfirmation = document.getElementById("password-confirmation");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            checkInputs();
+        });
+
+        function checkInputs() {
+            const usernameValue = username.value;
+            const emailValue = email.value;
+            const passwordValue = password.value;
+            const passwordConfirmationValue = passwordConfirmation.value;
+
+            if (usernameValue === "") {
+                setErrorFor(username, "O nome de usuário é obrigatório.");
+            } else {
+                setSuccessFor(username);
+            }
+
+            if (emailValue === "") {
+                setErrorFor(email, "O email é obrigatório.");
+            } else if (!checkEmail(emailValue)) {
+                setErrorFor(email, "Por favor, insira um email válido.");
+            } else {
+                setSuccessFor(email);
+            }
+
+            if (passwordValue === "") {
+                setErrorFor(password, "A senha é obrigatória.");
+            } else if (passwordValue.length < 7) {
+                setErrorFor(password, "A senha precisa ter no mínimo 7 caracteres.");
+            } else {
+                setSuccessFor(password);
+            }
+
+            if (passwordConfirmationValue === "") {
+                setErrorFor(passwordConfirmation, "A confirmação de senha é obrigatória.");
+            } else if (passwordConfirmationValue !== passwordValue) {
+                setErrorFor(passwordConfirmation, "As senhas não conferem.");
+            } else {
+                setSuccessFor(passwordConfirmation);
+            }
+
+            const formControls = form.querySelectorAll(".form-control");
+
+            const formIsValid = [...formControls].every((formControl) => {
+                return formControl.className === "form-control success";
+            });
+
+            if (formIsValid) {
+                console.log("O formulário está 100% válido!");
+            }
+        }
+
+        function setErrorFor(input, message) {
+            const formControl = input.parentElement;
+            const small = formControl.querySelector("small");
+
+            // Adiciona a mensagem de erro
+            small.innerText = message;
+
+            // Adiciona a classe de erro
+            formControl.className = "form-control error";
+        }
+
+        function setSuccessFor(input) {
+            const formControl = input.parentElement;
+
+            // Adiciona a classe de sucesso
+            formControl.className = "form-control success";
+        }
+
+        function checkEmail(email) {
+            return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+                email
+            );
+        }
+    </script>
+
 </body>
 
 </html>

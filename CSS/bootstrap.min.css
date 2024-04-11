@@ -167,14 +167,14 @@ sup {
 }
 
 a {
-    color: #007bff;
+    color: #040505;
     text-decoration: none;
     background-color: transparent
 }
 
 a:hover {
-    color: #0056b3;
-    text-decoration: underline
+    color: #040505;
+    text-decoration: none
 }
 
 a:not([href]):not([class]) {
@@ -2890,13 +2890,13 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #007bff;
+    /*background-color: #007bff;*/
     border-color: #007bff
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
+  
     border-color: #0062cc
 }
 
