@@ -54,5 +54,6 @@ com um  conjunto de páginas interconectadas de modo a trazer várias informaç�
 
 <h1>Footer </h1>
 
-![Footer](https://github.com/Imayagmb/Modavo/assets/129901845/33a9e951-bedd-443a-93bb-91e17637ac1a)
+![footer](https://github.com/Imayagmb/Modavo/assets/129901845/0ad13b07-e700-45c0-b953-c904f82149bf)
+
 
